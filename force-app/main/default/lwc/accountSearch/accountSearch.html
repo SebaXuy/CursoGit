@@ -1,0 +1,21 @@
+<!--
+  @description       : 
+  @author            : sebastian.y.raggio.-nd@disney.com
+  @group             : 
+  @last modified on  : 12-09-2022
+  @last modified by  : sebastian.y.raggio.-nd@disney.com
+-->
+<template>
+    <lightning-card>
+        <lightning-input
+            type="number"
+            label="Number of Employees"
+            value={numberOfEmployees}
+            onchange={handleChange}>
+        </lightning-input>
+        <lightning-button
+            label="Reset"
+            onclick={reset}>
+        </lightning-button>
+    </lightning-card>
+</template>

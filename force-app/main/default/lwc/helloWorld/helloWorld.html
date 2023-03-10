@@ -1,0 +1,18 @@
+<!--
+  @description       : 
+  @author            : Sebastian.Y.Raggio.-ND@disney.com
+  @group             : 
+  @last modified on  : 12-08-2020
+  @last modified by  : Sebastian.Y.Raggio.-ND@disney.com
+  Modifications Log 
+  Ver   Date         Author                              Modification
+  1.0   12-08-2020   Sebastian.Y.Raggio.-ND@disney.com   Initial Version
+-->
+<template>
+    <lightning-card title="HelloWorld" icon-name="custom:custom14">
+        <div class="slds-m-around_medium">
+            <p>Hello, {greeting}!</p>
+            <lightning-input label="Name" value={greeting} onchange={changeHandler}></lightning-input>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,25 @@
+<!--
+  @description       : 
+  @author            : Sebastian.Y.Raggio.-ND@disney.com
+  @group             : 
+  @last modified on  : 12-11-2020
+  @last modified by  : Sebastian.Y.Raggio.-ND@disney.com
+  Modifications Log 
+  Ver   Date         Author                              Modification
+  1.0   12-11-2020   Sebastian.Y.Raggio.-ND@disney.com   Initial Version
+-->
+<template>
+    <lightning-card>
+        <template if:true={contacts.data}>
+            <lightning-datatable
+                key-field="Id"
+                data={contacts.data}
+                columns={columns}
+            >
+           </lightning-datatable>
+        </template>
+        <template if:true={errors}>
+            <p>{errors}</p>
+        </template>
+    </lightning-card>
+</template>

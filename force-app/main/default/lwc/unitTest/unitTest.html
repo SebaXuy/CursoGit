@@ -1,0 +1,22 @@
+<!--
+  @description       : 
+  @author            : Sebastian.Y.Raggio.-ND@disney.com
+  @group             : 
+  @last modified on  : 12-14-2020
+  @last modified by  : Sebastian.Y.Raggio.-ND@disney.com
+  Modifications Log 
+  Ver   Date         Author                              Modification
+  1.0   12-14-2020   Sebastian.Y.Raggio.-ND@disney.com   Initial Version
+-->
+<template>
+    <lightning-card title="Unit Status" icon-name="standard:bot">
+        <lightning-input
+        label="Unit Number"
+        value={unitNumber}
+        onchange={handleChange} >
+      </lightning-input>
+      <div class="slds-m-around_medium">
+        Unit {unitNumber} alive!
+      </div>
+    </lightning-card>
+  </template>

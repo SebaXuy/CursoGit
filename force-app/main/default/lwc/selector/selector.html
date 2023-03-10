@@ -1,0 +1,25 @@
+<!--
+  @description       : 
+  @author            : Sebastian.Y.Raggio.-ND@disney.com
+  @group             : 
+  @last modified on  : 12-08-2020
+  @last modified by  : Sebastian.Y.Raggio.-ND@disney.com
+  Modifications Log 
+  Ver   Date         Author                              Modification
+  1.0   12-08-2020   Sebastian.Y.Raggio.-ND@disney.com   Initial Version
+-->
+<template>
+    <div class="wrapper">
+    <header class="header">Available Bikes for {name}</header>
+    <section class="content">
+        <div class="columns">
+        <main class="main" >
+            <c-list onproductselected={handleProductSelected}></c-list>
+        </main>
+        <aside class="sidebar-second">
+            <c-detail product-id={selectedProductId}></c-detail>
+        </aside>
+        </div>
+    </section>
+    </div>
+</template>
